@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css"/>
+    <title>CSS</title>
+</head>
+<body>
+        <div class="menubar">
+            <div id="leftMenu"></div>
+            <div id="icon"></div>
+            <h1>CSS</h1>
+        </div>
+        <ul class="none" id="topMenu">
+            <li id="html">HTML</li>
+            <li id="css">CSS</li>
+            <li id="js">JavaScript</li>
+            <li>ReactJS</li>
+            <li>Python</li>
+        </ul>
+        <div class="none" id="menu2">
+           <input type="search" id="searchInput" placeholder="Izlash..."/>
+        </div>
+    <div class="text">
+       <h2>CSS</h2>
+<hr />
+    <h3>Text style, Matn uchun stillar</h3>
+    <div class="code">  <C class="css-css">
+        font-weight: normal ;
+    </C>Matn qalinligi
+    <br><C class="css">
+        lighter
+    </C>Ingichka
+    <br><C class="css">
+        bold
+    <br></C>Qalin
+    <br><C class="css">
+        normal
+    </C>Õrtacha
+    <br><C class="css">100/900</C>100 dan 900 gacha son qiymati
+    <br><C class="css-css">
+        font-size: 16px ;
+    </C>Shrift õlchami
+    <br><C class="css-css">
+        font-style: italic;
+    </C>Matn kõrinishi
+    <br><C class="css-css">
+        font-family: monospace;
+    </C>Matn shrifti
+    <br /><C class="css-css">
+        text-decoration: overline;
+    </C><br>Matn beazagi
+    <br /><C class="css">
+        none
+    </C>Hech qanday
+    <br /><C class="css">
+        overline
+    </C>Ustiga chizilgan
+    <br /><C class="css">
+        underline
+    </C>Tagiga chizilgan
+    <br /><C class="css">
+        line-through
+    </C>Belidan chizilgan
+    <br /><C class="css-css">
+        text-transform: none ;
+    </C><br>Matn yozilish turi
+    <br /><C class="css">
+        uppercase
+    </C>Bosh harflar bilan
+    <br /><C class="css">
+        lowercase
+    </C>Kichik harflar bilan
+    <br /><C class="css">
+        capitalize
+    </C>Sõz 1-harfi, bosh harf bilan
+    <br /><C class="css-css">
+        text-align: center;
+    </C>Matn joylashuvi
+    <br /><C class="css">
+        left
+    </C>Chap
+    <br /><C class="css">
+        right
+    </C>Õng
+    <br /><C class="css">
+        center
+    </C>Õrta
+    <br /><C class="css">
+        justify
+    </C>2 chetga tekislangan
+    </div>
+    <p></p>
+    <h3>Hover</h3>
+    <C class="css-css" style="width: 100%;"><pre>  button:hover{
+    cursor: pointer;
+    background-color: red;
+    }</pre></C>
+    <h3>Cursor, Hover kõrinishlar</h3>
+    <img src="CursorC.png" alt="Rasm yuklanmadi" id="TABLE"/>
+    <h3>Background, orqa fon bilan ishlash</h3><div class="code"><C class="css-css">
+          background-color: white ;
+        </C><br>Orqa fon rangi<br><C class="css-css">background-image: url( ' /rasm.jpg ' ) ;</C><br>Orqa fonga rasm qõyish
+    <br /><C class="css-css">
+        background-size: cover;
+    </C><br />Orqa fonni elementga moslash
+    <br /><C class="css-css">
+        background-repeat: no repeat ;
+    </C><br>Orqa fon takrorlanishi
+    <br /><C class="css-css">
+        background-attachment: fixed;
+    </C><br>Orqa fonni qotirib qõyish
+    <br /><C class="css-css">
+        background-position:<font color="whitesmoke"> left</font> top;
+    </C><br>Orqa fonni aynan qayerini olish</div>
+    <div class="code"><C class="css-css">
+        list-style-type: none;
+    </C><br>HTML <C class="html">
+        &lt;li&gt;
+    </C>elementi uchun stil turi
+    <br><C class="css-css">
+        display: block;
+    </C>Ekran turini belgilash
+    <br /><C class="css-css">
+        flaot: left;
+    </C><br>Elementni biror tomonga surish
+    <br /><C class="css-css">
+        clear: both;
+    </C>floatni tasirsizlantirish
+    <br /><C class="css-css">
+        box-sizing: border-box;
+    </C><br>Õlchamga moslash padding, margin, borderlar bilan
+    <br /><C class="css-css">
+        transition: 0.6s;
+    </C><br>Element õzgarish davomiyligi vaqti
+    <br /><C class="css-css">
+        owerflow: auto;
+    </C>Element moslashuvi
+    <br /><C class="css-css">
+        line-height: 5px;
+    </C>Qator orasidagi joy
+    <br /><C class="css-css">
+        outline: none;
+    </C>Tashqari chiziq
+    <br /><C class="css-css">
+        border-collapse: collapse;
+    </C><br>HTML, <C class="html">
+        &lt;Table&gt;
+    </C> elementi borderlarini 1 qator qilish
+    </div>
+    <h3>Positions, Turlar</h3>
+    <div class="code">
+        <C class="css-css">
+            position: absolute;
+        </C>Atrofga tasirsiz
+        <br /><C class="css-css">
+            position: relative;
+        </C><br>Faqat obyektga nisbatan
+        <br /><C class="css-css">
+            position: fixed;
+        </C>Lentadan tashqari
+    </div>
+    <h3>Child, Obyekt target</h3>
+    <div class="code">
+        <C class="css-css">
+            .css: first-child {
+            }
+        </C><br>1-element uchun stil
+        <br /><C class="css-css">
+            .css: last-child { }
+        </C><br>2-element uchun stil
+        <br /><C class="css-css">
+            .css: nth-child(odd) { }
+        </C><br />Hartoq element uchun stil
+        <C class="css-css">
+            .css: nth-child(even) { }
+        </C><br>Harjuft element uchun stil
+    </div><p>
+    <h3>Õlchamlar</h3>
+    <div class="code">
+        <C class="css-css">
+            40vw
+        </C>Sahifa enini 40%
+        <br /><C class="css-css">
+            30vh
+        </C>Sahifa balandligini 30%
+        <br /><C class="css-css">
+            20vmin
+        </C>minimum õlchami
+        <br /><C class="css-css">
+            60vmax
+        </C>Maksimal õlcham
+    </div><p>
+    <h3>Css media query</h3>
+    <div class="code">
+        Har-xil qurilmalar uchun stil yozish
+        <br><C class="css-css">
+            @media (max-width: 767px) { }
+        </C><br>Telefon uchun
+        <br /><C class="css-css">
+            @media (min-width: 768px) and (max-width: 1023px) { }
+        </C><br>Planshet uchun
+        <br /><C class="css-css">
+            @media (min-width: 1024px) { }
+        </C><br>Kompyuter uchun
+    </div><p>
+    <h3>Css flex-box</h3>
+    <div class="code">
+        <C class="css-css">
+            display: flex;
+        </C>Flex hosil qilish
+        <br /><C class="css-css">
+            flex-direction: row;
+        </C>Elementlar tartibi
+        <br /><C class="css">
+            column
+        </C>Quyiga
+        <br /><C class="css">
+            column-reverse
+        </C>Yuqoriga
+        <br /><C class="css">
+            row
+        </C>Õngga
+        <br /><C class="css">
+            row-reverse
+        </C>Chapga
+        <br><C class="css-css">
+            justify-content: center;
+        </C><br>Gorizantal joylashish tartibi
+        <br><C class="css">
+            center
+        </C>Õrtaga
+        <br /><C class="css">
+            flex-start
+        </C>Chapga
+        <br /><C class="css">
+            flex-end
+        </C>Õngga
+        <br /><C class="css">
+            space-between
+        </C>Orasini teng ochish
+        <br /><C class="css">
+            space-around
+        </C>2 yonini teng ochish
+        <br /><C class="css">
+            space-evenly
+        </C>Teng orali
+        <br /><C class="css-css">
+            align-items: center
+        </C><br />Elementlar Vertikal joylashuvi
+        <br /><C class="css">
+            center
+        </C>Õrtaga
+        <br /><C class="css">
+            flex-start
+        </C>Sahifa yuqorisiga
+        <br /><C class="css">
+            flex-end
+        </C>Sahifa quyisiga
+        <br /><C class="css">
+            stretch
+        </C>Butun sahifani tõldirish
+        <br /><i>
+            Bu holatda elementga height(balandlik) berilmagan bõlishi kerak
+        </i>
+        <br /><C class="css">
+            Baseline
+        </C><br /><o style="margin-left:  20px;">Element matni bõyicha tekislash</o>
+        <br /><C class="css-css">
+            flex-wrap: wrap;
+        </C><br>Border õlchamiga moslash
+        <br><C class="css-css">
+            flex-shrink: <u>3</u>;
+        </C><br />Element boshqa elementlarga qaraganda necha marta tezroq qisqarishini belgilash
+        <br /><C class="css-css">
+            flex-grow: <u>5</u>;
+        </C><br />Element boshqa elementlarga qaraganda necha marta tezroq õsishini belgilash
+        <br><C class="css-css">
+            flex-bases: 120px;
+        </C><br>Boshlang'ich õlcham
+        <br><C class="css-css">
+            flex: <u>3</u><i>5</i><b>120px</b>;
+        </C><br /><u>grow</u> <i>shrink</i> <b>bases</b>
+        <br /><C class="css-css">
+            order: <u>3</u>;
+        </C><br>Element joylashuv õrni
+        <br /><C class="css-css">
+           align-self: center; 
+        </C>Õzini õzi joylashtirish
+        <br><C class="css">
+            Qiymatlari
+        </C>yuqoridagidek
+    </div>
+
+      <h3>CSS Grid</h3>
+
+    <img src="Grid.png" alt="Grid" id="TABLE" />
+    <div class="code">
+        <C class="css-css">
+            display: grid;
+        </C>Grid hosil q.
+        <br /><i><b>Grid bu asosan jadvalga õhshash elementlarga talluqli hisoblanadi</b></i>
+        <br /><C class="css-css">
+            grid-template-columns: 2px 3px 4px;
+        </C><br />Ustunlar(3 ta) va ular õlchami (px)
+        <br /><C class="css-css">
+            grid-template-rows: 3px 4px;
+        </C><br />Qatorlar(2 ta) va ular õlchami (px)
+        <br /><C class="css-css">
+            grid-column-gap: 10px;
+        </C><br />Eniga elementlar oralig'i
+        <br /><C class="css-css">
+            grid-row-gap: 10px;
+        </C><br />Bõyiga elementlar oralig'i
+        <br /><C class="css-css">
+            grid-column: 2/4;
+        </C><br />Eniga, ustunlarning ma'lum(2/4) qismini õzlashtirish
+        <br /><C class="css-css">
+            grid-row: 2/3;
+        </C><br />Bõyiga, ustunlarning ma'lum(2/4) qismini õzlashtirish
+        <br /><C class="css-css">
+            justify-items: end;
+        </C><br />Elementlarni konteyner biror tomoniga surish(ENIGA)
+        <br /><C class="css-css">
+            align-items: start;
+        </C><br />Elementlarni konteyner biror tomoniga surish(BÕYIGA)
+        <p /><b>QIYMATLARI:</b>
+        <br /><C class="css">
+            end
+        </C>Oxiriga
+        <br /><C class="css">
+            start
+        </C>Boshiga
+        <br /><C class="css">
+            center
+        </C>Õrtaga
+        <br /><C class="css">
+            stretch
+        </C>Teng joylash(<b>bõsh joysiz</b>)
+    </div>
+    <h3>Grid Area,Nom orqali joylashtirish</h3>
+    <img src="gridName.png" alt="Rasm yuklanmadi"/>
+   <h3>REPEAT</h3>
+    <div class="code">
+    <C class="css-css">
+       grid-template-columns: repeat(5,10px);
+    </C><br>Element yaratish(5 ta 10pxli element yaratish)
+    <br /><C class="css-css">
+        grid-template-columns: repeat(2, 3px, 5px);
+    </C><br>Har bir elementga alohida qiymat berib, yaratish
+    <br /><C class="css-css">
+        grid-template-columns: repeat(5, minmax(90px 120px));
+    </C><br />Minimum va Maksimum qiymat berish
+    <br /><C class="css-css">
+    grid-template-columns: repeat(auto-fill, 10px);
+    </C><br />Qancha element sig'dirish kerakligini avtomatik aniqlash(Bõsh joylarni tõldirib)
+    <br /><C class="css-css">
+        grid-template-columns: repeat(auto-fit, 10px);
+    </C><br />Qancha element sig'dirish kerakligini avtomatik aniqlash(Bõsh joylarni tõldirmasdan)
+    </div>
+    <h3>ANIMATSIYA</h3>
+    <div class="code">
+        <b>Animatsiya:</b><br>
+        <C class="css-css">
+           <pre><b>
+@keyframes aName{ 
+   from{font-size: 16px;}
+   to{font-size: 26px;}
+   }</b>
+</pre>
+        </C><br>Animatsiya yaratish, boshlanish(from) tugash(to) xolati
+        <br /><C class="css-css">
+            animation-name: aName;
+        </C><br />Yuqoridagi animatsiyani elementga birlashtirish
+        <br /><C class="css-css">
+            animation-duration: 3s;
+        </C><br>Animatsiya davomiylik vaqti(sekund)
+        <br /><C class="css-css">
+            animation-iteration-count: 10;
+        </C><br>A. qaytarilishi(necha marta)<br />infinite - cheksiz
+        <br /><C class="css-css">
+            animation-delay: 4s;
+        </C><br>Boshlanishdan oldingi pauza vaqti
+        <br /><C class="css-css">
+            animation-direction: alternate;
+        </C><br>A. bajarilish tartibi
+        <br /><C class="css">
+            reverse
+        </C>Teskari t.
+        <br /><C class="css">
+            alternate
+        </C>Odatiy t.
+        <br /><C class="css">
+            alternate-reverse
+        </C><br />Har-bir xolat, teskari tartibi
+        <br /><C class="css-css">
+            animation-timing-function: linear;
+        </C>A. vaqt funksiyasi
+        <br /><C class="css">
+            linear
+        </C>Bir-tekis
+        <br /><C class="css">
+            ease-in
+        </C>sekindan-tezga
+        <br /><C class="css">
+            ease-out
+        </C>tezdan-sekinga
+        <br /><C class="css-css">
+            animation-fill-mode: backwards;
+        </C><br />A.dan sõng, element holati
+        <br><C class="css">
+            backwards
+        </C>Boshlang'ich
+        <br /><C class="css">
+            forwards
+        </C>Sõnggi
+        <br /><C class="css-css">
+            animation-play-state:running;
+        </C>Document yuklanganda A.
+        <br /><C class="css">
+            running
+        </C>Yurgazilgan
+        <br /><C class="css">
+            paused
+        </C>Tõxtatilgan
+        <Br>
+        <c class="css-css">
+           animation: name 3s 1s 10 linear forwards ;  
+        </c><b>Barchasi bittada
+        <br />
+        <ol type="1">
+           <li>Animatsiya nomi</li>
+           <li>Davomiyligi</li>
+           <li>Delay</li>
+           <li>Takrorlanish</li>
+           <li>Vaqt funksiyasi</li>
+           <li>Sõnggi holati</li>
+        </ol>
+    </div>
+    </div>
+    <footer>
+        CopyRight&copy;Mansurbek Ahmedov 2021
+    </footer>
+    <script src="search.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>

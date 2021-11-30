@@ -1,0 +1,451 @@
+body{
+    margin: 0;
+    padding: 0;
+    background-image: url('bgmobile.jpg');
+    background-color: black;
+    background-position: top center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    
+}
+.ciny{
+    background: none;
+    background-color: #111111;
+    opacity: 0.4;
+}
+
+
+/*------Animations------*/
+@keyframes leftMenu{
+    from{
+        width: 0%;
+        opacity: 0;
+    }
+    to{
+        width: 60%;
+        opacity: 0.9;
+    }
+}
+@keyframes topMenuLeft{
+    from{
+        margin-left: 100%;
+        opacity: 0;
+        
+    }
+    to{
+        margin-left: 55%;
+        opacity: 0.9;
+    }
+}
+@keyframes topMenuRight{
+  from{
+    opacity: 0.9;
+    margin-left: 55%;
+  }
+  to{
+    opacity: 0;
+    position: fixed;
+    margin-left: 100%;
+  }
+}
+/*------Text------*/
+.text{
+    font-size: 12px;
+    font-family: sans-serif;
+    color: #FFf;
+    font-weight: bold;
+    padding: 15px;
+    margin: auto;
+    padding-top: 40px;
+    text-align: center;
+}
+img{
+    margin: 10px 0 20px 0;
+    width: 100%;
+}
+h2{
+    display: block;
+    text-align: center;
+    font-family: fantasy;
+    background: none;
+    padding: 5px;
+    margin: auto;
+    margin-top: 20px;
+    font-size: 16px;
+    color: white;
+}
+/*------MenuBar------*/
+.menubar{
+    background-color: #42445A;
+    opacity: 0.9;
+    width: 100%;
+    position: fixed;
+    color: white;
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    height: 30px;
+}
+.menubar #leftMenu{
+    background-image: url('leftMenu.png');
+    background-position: center center;
+    background-size: cover;
+    width: 25px;
+    height: 25px;
+    margin: 0 15px;
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.6s;
+}
+.menubar #leftMenu:active{
+    background-color: lightgray;
+}
+.menubar h1{
+    font-family: sans-serif;
+    font-weight: normal;
+    font-size: 20px;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+
+/*------TopMenu------*/
+#topMenu{
+    padding: 10px;
+    color: #04B3FF;
+    background-color: #42445A;
+    border-bottom-left-radius: 3px;
+    border-bottom-right-radius: 3px;
+    margin-top: 40px;
+    position: fixed;
+}
+#topMenu li{
+    list-style: none;
+    margin-top: 1px;
+    text-align: center;
+    padding: 5px 15px;
+    transition: 0.6s;
+    border-radius: 40px;
+    font-family: sans-serif;
+    border: 1px solid #03CBFF;
+    border-top: none;
+    border-left: none;
+    margin: 10px;
+    box-sizing: border-box;
+    font-size: 13px;
+    font-weight: 700;
+}
+#topMenu li:active{
+    border: 1px solid #03CBFF;
+    border-bottom: none;
+    border-right: none;
+}
+.topMenuLeft{
+  animation: topMenuLeft 0.6s 0s 1 linear forwards;
+}
+.topMenuRight{
+  animation: topMenuRight 0.6s 0s 1 linear forwards;
+}
+.none{
+    display: none;
+}
+/*------LeftMenu------*/
+.menu{
+    background-color: #42445A;
+    position: fixed;
+    padding: 15px;
+    margin-top: 40px;
+    height: 100vh;
+    animation-name: leftMenu;
+    animation-duration: 0.5s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+}
+.menu ul{
+    margin: 0;
+    padding: 0;
+}
+.menu ul li{
+    display: inline-block;
+    list-style-type: none;
+    color: white;
+    margin: 10px 5px;
+    box-sizing: border-box;
+    padding: 10px;
+    border: 1px solid white;
+    border-radius: 3px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    transition: 0.5s;
+}
+.menu ul li:active{
+    background-color: white;
+}
+
+/*------Icons------*/
+.iconJavaScript{
+    background-image: url('iconJS.png');
+}
+.iconCSS{
+    background-image: url('iconCSS.png')
+}
+.iconHTML{
+    background-image: url('iconHTML.png')
+}
+.iconReactJS{
+    background-image: url('ReactJS.png')
+}
+.iconPython{
+  background-image: url('iconPY.png')
+}
+#icon{
+    background-size: cover;
+    background-position: center center;
+    margin-left: auto;
+    margin-right: px;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}
+@keyframes rotRight{
+  from{
+    transform: rotate(90deg)
+  }
+  to{
+    transform: rotate(270deg)
+  }
+}
+@keyframes rotLeft{
+  from{
+    transform: rotate(270deg)
+  }
+  to{
+    transform: rotate(90deg)
+  }
+}
+#rightMenu{
+  background-image: url('down.png');
+    background-size: cover;
+    background-position: center center;
+    margin-left: 20px;
+    margin-right: 15px;
+    width: 25px;
+    height: 25px;
+    border-radius: 5px;
+    transform: rotate(90deg);
+}
+.up{
+  animation: rotRight 0.6s 0s 1 linear forwards;
+}
+.down{
+  animation: rotLeft 0.6s 0s 1 linear forwards;
+}
+/*------EYE------*/
+.eye{
+   background-size: cover;
+   background-position: center center;
+   position: absolute;
+   margin-left: 60px;
+   width: 30px;
+   height: 30px;
+   border-radius: 5px;
+   transition: 0.3s;
+}
+#eyeoff{
+    background-image:   url("eyeoff.png")
+}
+#eyeon{
+    background-image: url("eyeon.png")
+}
+
+#TABLE{
+    margin-top: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: 5px solid black;
+}
+C{
+    margin: 4px 4px 4px 0;
+    border-radius: 2px;
+    padding: 3px;
+    box-sizing: border-box;
+    text-align: left;
+    font-family: sans-serif;
+    font-weight: 600;
+    display: inline-block;
+}
+.html{
+    color: white;
+    background-color: #ff5902;
+}
+.js{
+    color: black;
+    background-color: #ffff00;
+    font-family: monospace;
+    font-size: 10px;
+    margin-top: 10px;
+    
+}
+.css{
+    color: white;
+    background-color: #047CE2;
+    font-family: monospace;
+    margin-left: 20px;
+}
+.rc{
+  background-color: #42445A;
+  color: #08BAFF;
+  font-weight: lighter;
+  font-family: monospace;
+  font-size: 10px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #08BAFF;
+  margin-top: 20px;
+  padding: 5px;
+}
+.py{
+  background: none;
+  color: #3507FF;
+  font-weight: lighter;
+  font-family: monospace;
+  font-size: 10px;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #999;
+  margin-top: 20px;
+  padding: 5px;
+}
+
+#rc{
+  color: ghostwhite;
+  font-family: sans-serif;
+  font-weight: lighter;
+  padding: 20px;
+  font-size: 17px;
+  background-color: #42445A;
+}
+#py{
+  color: #999;
+  font-family: sans-serif;
+  font-weight: 300;
+  font-size: 17px;
+  background-color: white;
+}
+.code{
+   background: none;
+   text-align: left;
+   box-sizing: border-box;
+   color: white;
+}
+#searchInput{
+    width: 100%;
+    background: none;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid darkgray;
+    padding: 2px;
+    box-sizing: border-box;
+    color: white;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+#searchInput:hover{
+  color: #03CBFf;
+  border-color: #03CBFF;
+}
+.css-css{
+   color: #fff;
+   background-color: #0264B8;
+   font-family: monospace;
+   margin-top: 15px;
+}
+/*------Desktop------*/
+@media(min-width: 767px){
+    body{
+      background-image: url('bgdesktop.jpg');
+    }
+    #topMenu{
+        margin-left: 85%;
+    }
+    #topMenu li:hover{
+  border: 1px solid #03CBFF;
+}
+  img{
+        width: 30%;
+    }
+    @keyframes topMenuLeft{
+    from{
+        margin-left: 100%;
+        opacity: 0;
+        
+    }
+    to{
+        margin-left: 85%;
+        opacity: 0.9;
+    }
+}
+@keyframes topMenuRight{
+  from{
+    opacity: 0.9;
+    margin-left: 85%;
+  }
+  to{
+    opacity: 0;
+    position: fixed;
+    margin-left: 100%;
+  }
+}
+.text{
+  font-size: 8px;
+}
+}
+/*------Footer------*/
+footer{
+    width: 100vw;
+    margin: 0;
+    margin-top: 30px;
+    font-family: monospace;
+    font-style: 10px;
+    font-weight: bold;
+    padding: 10px 0;
+    text-align: center;
+    color: white;
+    background: linear-gradient(45deg,red,orange,yellow,lime,limegreen,aqua,blue)
+}
+/*------H3------*/
+h3{
+    margin: 0;
+    margin-top: 40px;
+    margin-bottom: 5px;
+    text-align: center;
+    color: #04B3FF;
+    background-color: #42445A;
+    padding: 5px;
+    border: 2px solid #04B3FF;
+    border-left: none;
+    border-right: none;
+    border-radius: 0px;
+}
+
+/*------Search------*/
+.svs{
+  background-color: #202362;
+  padding: 10px;
+  border-bottom: 1px dotted #03CBFf;
+  width: 90%;
+}
+.svs a, .svs p{
+  display: block;
+  padding: 0;
+  width: 100%;
+  margin: auto;
+  color: #04B3FF;
+  font-family: 'Times New Roman';
+  font-size: 14px;
+  text-decoration: none;
+}

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#ffffff"/>
+    <link rel="stylesheet" href="index.css">
+    <title>Bosh sahifa</title>
+</head>
+<body>
+  <div class="desktop">
+  <mark id="hello">Assalomu alaykum</mark>
+  <mark id="wellicome">Xush kelibsiz!</mark>
+  </div>
+  <div id="Menu">
+<ul>
+      <li><img src="iconPY.png"/>Python</li>
+      <li><img src="iconJS.png">JavaScript</li>
+      <li><img src="ReactJS.png">ReactJS</li>
+      <li><img src="iconHTML.png">HTML</li>
+      <li><img src="iconCSS.png">CSS</li>
+    </ul>
+  </div>
+  <div class="clr"></div>
+    <footer>
+    Guide from Mansurbek Ahmedov<br>Building date 2021.09.19 &nbsp; v.1.1
+  </footer>
+  <script>
+    let lia=document.querySelectorAll('#Menu ul li')
+    lia.forEach(function(href){
+    href.addEventListener('click',function(){
+    open((href.textContent).toLowerCase()+'.html');
+    });
+    })
+  </script>
+</body>
+</html>
