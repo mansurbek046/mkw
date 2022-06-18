@@ -1,0 +1,45 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+body {
+    background-color: #f7f7f7;
+    color: #999999;
+    padding-top: 15px;
+}
+
+.router{
+    display: block;
+    text-align: center;
+}
+.router a{
+    text-decoration: none;
+    display: inline-block;
+}
+.router a button {
+    padding: 10px 15px;
+    border: 1px solid #7C7C7C;
+    background-color: transparent;
+    font-size: 25px;
+    color: #7C7C7C;
+    border-radius: 13px;
+    display: block;
+    margin: 10px auto;
+    font-weight: 100;
+    width: 60vw;
+    outline: none;
+}
+.router a button:hover{
+    background-color: #7C7C7C;
+    color: #f7f7f7;
+}
+footer{
+    text-align: center;
+    margin-top: 15px;
+}
+button::disabled{
+    background: red
+}
